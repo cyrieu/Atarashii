@@ -36,6 +36,28 @@
         android:textSize="16sp" />
 
     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp" >
+
+        <ImageView
+            android:id="@+id/MALBadge"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_badge_mal" />
+
+        <ImageView
+            android:id="@+id/HBBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/MALBadge"
+            android:src="@drawable/ic_badge_hummingbird" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right" >
@@ -66,6 +88,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
+
     </RelativeLayout>
 
     <ImageView
@@ -73,7 +96,7 @@
         style="@style/Widget.Sherlock.ActionButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_gravity="bottom|left"
+        android:layout_gravity="bottom"
         android:focusable="false"
         android:paddingLeft="0dip"
         android:paddingRight="22dip"
