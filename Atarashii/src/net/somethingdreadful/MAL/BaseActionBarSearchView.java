@@ -1,6 +1,8 @@
 package net.somethingdreadful.MAL;
 
 import android.content.Intent;
+import android.util.Log;
+
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -52,6 +54,7 @@ public abstract class BaseActionBarSearchView extends SherlockFragmentActivity
                 this.doSearch(query, getCurrentListType());
             } else {
                 Intent startSearch = new Intent(this, SearchActivity.class);
+                System.out.println(query);
                 startSearch.putExtra("net.somethingdreadful.MAL.search_query", query);
                 startSearch.putExtra("net.somethingdreadful.MAL.search_type", getCurrentListType().ordinal());
                 startActivity(startSearch);

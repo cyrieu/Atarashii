@@ -59,7 +59,7 @@
 
         <activity
                 android:name=".SearchActivity"
-                android:launchMode="singleInstance"
+                android:launchMode="singleTask"
                 android:label="Search">
         </activity>
 
